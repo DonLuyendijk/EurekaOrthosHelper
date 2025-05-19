@@ -1,0 +1,26 @@
+Add-Type -AssemblyName System.Drawing
+
+# Set JPEG quality (0 to 100)
+$quality = 95
+
+# Get encoder for JPEG
+$encoder = [System.Drawing.Imaging.ImageCodecInfo]::GetImageEncoders() | Where-Object { $_.MimeType -eq 'image/jpeg' }
+
+# Create encoder parameters
+$encoderParams = New-Object System.Drawing.Imaging.EncoderParameters(1)
+$encoderParam = New-Object System.Drawing.Imaging.EncoderParameter([System.Drawing.Imaging.Encoder]::Quality, [long]$quality)
+$encoderParams.Param[0] = $encoderParam
+
+# Process all PNG files
+$pngFiles = Get-ChildItem -Filter *.png
+foreach ($file in $pngFiles) {
+    $img = [System.Drawing.Image]::FromFile($file.FullName)
+    $jpgPath = [System.IO.Path]::ChangeExtension($file.FullName, "jpg")
+    $img.Save($jpgPath, $encoder, $encoderParams)
+    $img.Dispose()
+}
+
+
+
+
+#Get-ChildItem -Filter *.png | Remove-Item -Force
