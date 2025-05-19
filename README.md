@@ -4,3 +4,5 @@ App to show dangerous enemies on the floor you are on. Great for your second mon
 
 Built with Vite + React and Material UI components.
 Images taken from [ddcompendium](https://www.ddcompendium.com/).
+
+![demo image](https://github.com/DonLuyendijk/EurekaOrthosHelper/blob/main/demo.png)
