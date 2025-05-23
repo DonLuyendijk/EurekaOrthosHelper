@@ -10,7 +10,7 @@ export const enemies = [
   {
     name: 'Behemoth',
     image: '/enemies/behemoth.jpg',
-    notes: '<b>Wild Horn:</b> Knockback<br><b>Ecliptic Meteor:</b> Roomwide enrage used at 40% HP. Can be LoS-ed.',
+    notes: '<b>Wild Horn:</b> Knockback<br><b>Ecliptic Meteor:</b> Huge roomwide enrage used at 40% HP. Can be LoS-ed.',
     startFloor: 5,
     endFloor: 7,
     mainlyDangerousWhenSolo: false
@@ -18,15 +18,23 @@ export const enemies = [
   {
     name: 'Sawtooth',
     image: '/enemies/sawtooth.jpg',
-    notes: '<b>Mean Thrash:</b> Backwards cone. Can be used if someone is behind.',
+    notes: '<b>Mean Thrash:</b> Small rear cone. Used if someone is behind.',
     startFloor: 18,
     endFloor: 19,
     mainlyDangerousWhenSolo: false
   },
   {
+    name: 'Orthodemolisher',
+    image: '/enemies/demolisher.jpg',
+    notes: '<b>Self-detonate:</b> Large self-destruct used at 30% HP. Can be LoS-ed or skipped by killing.',
+    startFloor: 21,
+    endFloor: 22,
+    mainlyDangerousWhenSolo: true
+  },
+  {
     name: 'Orthoknight',
     image: '/enemies/knight.jpg',
-    notes: '<b>Electromagnetism:</b> Draw-in. Will kill anyone who gets drawn in too close.',
+    notes: '<b>Electromagnetism:</b> Draw-in. Quickly followed by a small point-blank AoE. Get away after being sucked in.',
     startFloor: 21,
     endFloor: 22,
     mainlyDangerousWhenSolo: false
@@ -34,7 +42,7 @@ export const enemies = [
   {
     name: 'Lesser dragon (Patrol)',
     image: '/enemies/lesser-dragon.jpg',
-    notes: '<b>Swinge:</b> Large cone AoE.',
+    notes: '<b>Swinge:</b> Huge cone AoE.',
     startFloor: 24,
     endFloor: 26,
     mainlyDangerousWhenSolo: false
@@ -42,7 +50,7 @@ export const enemies = [
   {
     name: 'Vanara (Patrol)',
     image: '/enemies/vanara.jpg',
-    notes: '<b>Scythe Tail:</b> Small point-blank AoE. Follows up with a combo if you get hit.',
+    notes: '<b>Scythe Tail:</b> Small point-blank AoE. Follows up with a lethal combo if you get hit.',
     startFloor: 27,
     endFloor: 29,
     mainlyDangerousWhenSolo: false
@@ -66,7 +74,7 @@ export const enemies = [
   {
     name: 'Orthotaur',
     image: '/enemies/taur.jpg',
-    notes: '<b>111-tonze Swing:</b> Medium point-blank AoE.<br><b>11-tonze Swipe:</b> Medium cone AoE.',
+    notes: '<b>111-tonze Swing:</b> Small point-blank AoE.<br><b>11-tonze Swipe:</b> Medium cone AoE.',
     startFloor: 35,
     endFloor: 38,
     mainlyDangerousWhenSolo: false
@@ -74,7 +82,7 @@ export const enemies = [
   {
     name: 'Orthochimera',
     image: '/enemies/chimera.jpg',
-    notes: '<b>The Ram\'s Voice:</b> Small point-blank AoE.<br><b>The Dragon\'s Voice:</b> Large donut AoE.',
+    notes: '<b>The Ram\'s Voice:</b> Medium point-blank AoE.<br><b>The Dragon\'s Voice:</b> Large donut AoE.',
     startFloor: 36,
     endFloor: 39,
     mainlyDangerousWhenSolo: false
@@ -82,7 +90,7 @@ export const enemies = [
   {
     name: 'Orthoray (Patrol)',
     image: '/enemies/ray.jpg',
-    notes: '<b>Forearming:</b> Large 180 degree front cone AoE.<br><b>Atmospheric Displacement:</b> Medium point-blank AoE.',
+    notes: '<b>Forearming:</b> Huge 180 degree front cone AoE.<br><b>Atmospheric Displacement:</b> Medium point-blank AoE.',
     startFloor: 36,
     endFloor: 39,
     mainlyDangerousWhenSolo: false
@@ -90,7 +98,7 @@ export const enemies = [
   {
     name: 'Orthoempuse',
     image: '/enemies/empuse.jpg',
-    notes: '<b>Kneeling Snath:</b> Knockback. Don\'t get knocked into more enemies.',
+    notes: '<b>Kneeling Snath:</b> Knockback. Don\'t get knocked into more enemies or traps .',
     startFloor: 37,
     endFloor: 39,
     mainlyDangerousWhenSolo: false
@@ -98,7 +106,7 @@ export const enemies = [
   {
     name: 'Bergthurs',
     image: '/enemies/bergthurs.jpg',
-    notes: '<b>Elbow Drop:</b> Very fast rear cone AoE. Only used if someone is behind.',
+    notes: '<b>Elbow Drop:</b> Fast small rear cone AoE. Only used if someone is behind.',
     startFloor: 41,
     endFloor: 44,
     mainlyDangerousWhenSolo: false
@@ -106,7 +114,7 @@ export const enemies = [
   {
     name: 'Acheron (Patrol)',
     image: '/enemies/acheron.jpg',
-    notes: '<b>Quake:</b> Roomwide AoE. Can be LoS-ed or interrupted.',
+    notes: '<b>Quake:</b> Huge roomwide AoE. Can be LoS-ed or interrupted.',
     startFloor: 41,
     endFloor: 44,
     mainlyDangerousWhenSolo: false
@@ -130,7 +138,7 @@ export const enemies = [
   {
     name: 'Kelpie (Patrol)',
     image: '/enemies/kelpie.jpg',
-    notes: '<b>Gallop:</b> Dash to a player. Can be LoS-ed, but not necessary. Followed by <b>Bloody Puddle.<br>Bloody Puddle:</b> Large point-blank AoE.',
+    notes: '<b>Gallop:</b> Dash to a player. Can be LoS-ed, but not necessary. Followed by <b>Bloody Puddle.<br>Bloody Puddle:</b> Medium point-blank AoE.',
     startFloor: 44,
     endFloor: 46,
     mainlyDangerousWhenSolo: false
@@ -138,7 +146,7 @@ export const enemies = [
   {
     name: 'Goobbue',
     image: '/enemies/goobbue.jpg',
-    notes: '<b>Inhale:</b> Draw-in. Followed by a fast frontal cone AoE. Pay attention to the draw-in.',
+    notes: '<b>Inhale:</b> Draw-in. Followed by a fast frontal cone AoE. Pay attention to the draw-in, then run behind.',
     startFloor: 45,
     endFloor: 47,
     mainlyDangerousWhenSolo: false
@@ -154,7 +162,7 @@ export const enemies = [
   {
     name: 'Hoarhound',
     image: '/enemies/hoarhound.jpg',
-    notes: '<b>Abyssal Cry:</b> Roomwide AoE followed by instant kill. Can be LoS-ed.',
+    notes: '<b>Abyssal Cry:</b> Huge roomwide AoE followed by instant kill. Can be LoS-ed.',
     startFloor: 46,
     endFloor: 49,
     mainlyDangerousWhenSolo: false
@@ -162,7 +170,7 @@ export const enemies = [
   {
     name: 'Gelato',
     image: '/enemies/gelato.jpg',
-    notes: '<b>Explosion:</b> Roomwide enrage used at 30% HP. Can be LoS-ed.',
+    notes: '<b>Explosion:</b> Huge roomwide enrage used at 30% HP. Can be LoS-ed or skipped by killing.',
     startFloor: 47,
     endFloor: 49,
     mainlyDangerousWhenSolo: false
@@ -178,7 +186,7 @@ export const enemies = [
   {
     name: 'Ymir',
     image: '/enemies/ymir.jpg',
-    notes: '<b>Gelid Charge:</b> Counterattacka. Do not hit with physical attacks, including auto-attacks.',
+    notes: '<b>Gelid Charge:</b> Counterattacks. Do not hit with physical attacks, including auto-attacks.',
     startFloor: 51,
     endFloor: 54,
     mainlyDangerousWhenSolo: false
@@ -194,7 +202,7 @@ export const enemies = [
   {
     name: 'Yabby (Patrol)',
     image: '/enemies/yabby.jpg',
-    notes: '<b>Scuttling Skewer:</b> Inflicts heavy. Followed by <b>Tail Screw.<br>Tail Screw:</b> Small AoE which does 99% of your HP. You need to already be moving when slowed to avoid this.',
+    notes: '<b>Scuttling Skewer:</b> Inflicts heavy. Followed by <b>Tail Screw.<br>Tail Screw:</b> Small AoE which does 99% of your HP. Move away as soon as you get heavy to avoid this.',
     startFloor: 54,
     endFloor: 56,
     mainlyDangerousWhenSolo: false
@@ -202,7 +210,7 @@ export const enemies = [
   {
     name: 'Big Claw',
     image: '/enemies/bigclaw.jpg',
-    notes: '<b>Crab Dribble:</b> Very fast rear cone AoE. Only used if someone is behind.',
+    notes: '<b>Crab Dribble:</b> Very fast small rear cone AoE. Only used if someone is behind.',
     startFloor: 55,
     endFloor: 58,
     mainlyDangerousWhenSolo: false
@@ -210,7 +218,7 @@ export const enemies = [
   {
     name: 'Zaratan',
     image: '/enemies/zaratan.jpg',
-    notes: '<b>Sewer Water:</b> Large 180 degree front cone AoE followed by a large 180 degree rear cone AoE. Easiest to dodge when close.',
+    notes: '<b>Sewer Water:</b> Medium 180 degree front cone AoE followed by a large 180 medium rear cone AoE. Easiest to dodge when close.',
     startFloor: 55,
     endFloor: 58,
     mainlyDangerousWhenSolo: false
@@ -226,7 +234,7 @@ export const enemies = [
   {
     name: 'Stingray',
     image: '/enemies/stingray.jpg',
-    notes: '<b>Body Slam:</b> Instant knockback point-blank AoE. No cast bar.<br><b>Electric Whorl:</b> Huge donut AoE. Cannot be LoS-ed.<br><b>Expulsion:</b> Medium point-blank AoE.',
+    notes: '<b>Body Slam:</b> Instant knockback point-blank AoE. Knocks you in the direction you are walking. No cast bar.<br><b>Electric Whorl:</b> Huge donut AoE. Cannot be LoS-ed.<br><b>Expulsion:</b> Medium point-blank AoE.',
     startFloor: 57,
     endFloor: 59,
     mainlyDangerousWhenSolo: false
@@ -242,7 +250,7 @@ export const enemies = [
   {
     name: 'Cobra (Patrol)',
     image: '/enemies/cobra.jpg',
-    notes: '<b>Whip Back:</b> Very fast rear cone AoE. Only used if someone is behind.',
+    notes: '<b>Whip Back:</b> Fast rear cone AoE. Only used if someone is behind.',
     startFloor: 61,
     endFloor: 64,
     mainlyDangerousWhenSolo: false
@@ -258,7 +266,7 @@ export const enemies = [
   {
     name: 'Palleon',
     image: '/enemies/palleon.jpg',
-    notes: '<b>Sticky Tongue:</b> Draw-in. Followed by <b>Body Press.<br>Body Press:</b> Small point-blank AoE. Run out after being drawn in. Will try to keep using this if stunned.',
+    notes: '<b>Sticky Tongue:</b> Draw-in. Followed by <b>Body Press.<br>Body Press:</b> Small point-blank AoE. Run out after being drawn in. If stunned, this will be used after being unstunned.',
     startFloor: 67,
     endFloor: 69,
     mainlyDangerousWhenSolo: false
@@ -274,7 +282,7 @@ export const enemies = [
   {
     name: '<u>Gowrow (Patrol) (Extra dangerous)</u>',
     image: '/enemies/gowrow.jpg',
-    notes: '<b>Ripper Claw:</b> Frontal cone AoE without castbar. Used when he brings his arm back.<br><b>Tail Smash:</b> Rear cone AoE without castbar. Used when he raises his tail.',
+    notes: '<b>Ripper Claw:</b> Small frontal cone AoE without castbar. Used when he brings his arm back.<br><b>Tail Smash:</b> Small rear cone AoE without castbar. Used when he raises his tail.',
     startFloor: 63,
     endFloor: 66,
     mainlyDangerousWhenSolo: false
@@ -290,7 +298,7 @@ export const enemies = [
   {
     name: 'Toco Toco',
     image: '/enemies/tocotoco.jpg',
-    notes: '<b>Slowcall:</b> Frontal cone AoE. Inflicts slow.',
+    notes: '<b>Slowcall:</b> Small frontal cone AoE. Inflicts slow.',
     startFloor: 71,
     endFloor: 73,
     mainlyDangerousWhenSolo: false
@@ -298,7 +306,7 @@ export const enemies = [
   {
     name: 'Primelephas',
     image: '/enemies/primelephas.jpg',
-    notes: '<b>Rout:</b> Dashes to a player. Followed by <b>Rear.<br>Rear:</b> Small point-blank AoE. Will try to keep using this if stunned.',
+    notes: '<b>Rout:</b> Dashes to a player. Followed by <b>Rear.<br>Rear:</b> Small point-blank AoE. If stunned, this will be used after being unstunned.',
     startFloor: 71,
     endFloor: 73,
     mainlyDangerousWhenSolo: false
@@ -306,7 +314,7 @@ export const enemies = [
   {
     name: 'Coeurl',
     image: '/enemies/coeurl.jpg',
-    notes: '<b>Wide Blaster:</b> Large, wide frontal cone AoE.<br><b>Tail Swing:</b> Large rear cone AoE. Only used if someone is behind.',
+    notes: '<b>Wide Blaster:</b> Huge, wide frontal cone AoE.<br><b>Tail Swing:</b> Huge (but not as wide) rear cone AoE. Only used if someone is behind.',
     startFloor: 71,
     endFloor: 74,
     mainlyDangerousWhenSolo: false
@@ -322,7 +330,7 @@ export const enemies = [
   {
     name: '<u>Thunderbeast (Patrol) (Extra dangerous)</u>',
     image: '/enemies/thunderbeast.jpg',
-    notes: '<b>Scythe Tail:</b> Small point-blank AoE without castbar. Used after pausing for a bit. Pay attention to this.<br><b>Spark:</b> Large donut AoE. Only used if someone is far.',
+    notes: '<b>Scythe Tail:</b> Small point-blank AoE without castbar. Used after pausing for a bit. Pay extra attention to this.<br><b>Spark:</b> Large donut AoE. Only used if someone is far.',
     startFloor: 73,
     endFloor: 76,
     mainlyDangerousWhenSolo: false
@@ -330,7 +338,7 @@ export const enemies = [
   {
     name: '<u>Gulo Gulo (Extra dangerous)</u>',
     image: '/enemies/gulogulo.jpg',
-    notes: '<b>The Killing Paw:</b> Frontal cone AoE. Will repeat this attack once afterwards. May store this attack when interrupted, stunned or slowed. Preferably avoid.',
+    notes: '<b>The Killing Paw:</b> Frontal cone AoE. Will repeat this attack once afterwards. May \'store\' this attack and use it later when interrupted, stunned or slowed. Can allegedly also store the attack without CC effects.',
     startFloor: 73,
     endFloor: 76,
     mainlyDangerousWhenSolo: false
@@ -338,7 +346,7 @@ export const enemies = [
   {
     name: 'Kargas',
     image: '/enemies/kargas.jpg',
-    notes: '<b>Winds of Winter:</b> Roomwide AoE used after approximately 30 seconds. LoS to survive.',
+    notes: '<b>Winds of Winter:</b> Huge roomwide AoE used after approximately 30 seconds. LoS or stun to survive.',
     startFloor: 75,
     endFloor: 77,
     mainlyDangerousWhenSolo: false
@@ -352,9 +360,17 @@ export const enemies = [
     mainlyDangerousWhenSolo: false
   },
   {
+    name: 'Flamebeast',
+    image: '/enemies/flamebeast.jpg',
+    notes: '<b>Blistering Roar:</b> Huge, wide line AoE.',
+    startFloor: 77,
+    endFloor: 79,
+    mainlyDangerousWhenSolo: false
+  },
+  {
     name: 'Skatene',
     image: '/enemies/skatene.jpg',
-    notes: '<b>Chirp:</b> Small point-blank AoE which inflicts sleep. Will follow up with a lethal attack if you get hit.',
+    notes: '<b>Chirp:</b> Medium point-blank AoE which inflicts sleep. Will follow up with a lethal attack if you get hit.',
     startFloor: 77,
     endFloor: 79,
     mainlyDangerousWhenSolo: false
@@ -378,7 +394,7 @@ export const enemies = [
   {
     name: 'Gourmand (Patrol)',
     image: '/enemies/gourmand.jpg',
-    notes: '<b>Inhale:</b> Draw-in. Followed by a fast frontal cone AoE. Pay attention to the draw-in.',
+    notes: '<b>Inhale:</b> Draw-in. Followed by a fast frontal cone AoE. Pay attention to the draw-in, then run behind.',
     startFloor: 84,
     endFloor: 86,
     mainlyDangerousWhenSolo: false
@@ -386,7 +402,7 @@ export const enemies = [
   {
     name: '<u>Catoblepas (Extra dangerous)</u>',
     image: '/enemies/catoblepas.jpg',
-    notes: '<b>Demon Eye:</b> Gaze which inflicts petrify. Also used out of combat, be extra careful.',
+    notes: '<b>Demon Eye:</b> Room-wide gaze which inflicts a 20 second petrify. Also used out of combat, be extra careful.',
     startFloor: 81,
     endFloor: 84,
     mainlyDangerousWhenSolo: false
@@ -418,7 +434,7 @@ export const enemies = [
   {
     name: '<u>Specter (Patrol) (Extra dangerous)</u>',
     image: '/enemies/specter.jpg',
-    notes: '<b>Left Sweep:</b> 210 degree AoE to the left.<br><b>Right Sweep:</b> 210 degree AoE to the right.<br><b>Surrounding Burst:</b> Large point-blank AoE.<br><b>Ringing Burst:</b> Large donut AoE.<br>Alternates sweeps & bursts. Stay close for easier dodging and run away for surrounding burst.',
+    notes: '<b>Left Sweep:</b> Huge 210 degree AoE to the left.<br><b>Right Sweep:</b> Huge 210 degree AoE to the right.<br><b>Surrounding Burst:</b> Large point-blank AoE.<br><b>Ringing Burst:</b> Huge donut AoE.<br>Alternates sweeps & bursts. Stay close for easier dodging and run away for surrounding burst.',
     startFloor: 86,
     endFloor: 89,
     mainlyDangerousWhenSolo: false
@@ -490,7 +506,7 @@ export const enemies = [
   {
     name: 'Servomechanical Orthotaur (Patrol)',
     image: '/enemies/mechanicaltaur.jpg',
-    notes: '<b>32-tonze Swipe:</b> Medium cone AoE.<br><b>Zoom In:</b> Dashes at a player. Followed by <b>128-tonze Swing.<br>128-tonze Swing:</b> Medium point-blank AoE.',
+    notes: '<b>32-tonze Swipe:</b> Huge cone AoE.<br><b>Zoom In:</b> Dashes at a player. Followed by <b>128-tonze Swing.<br>128-tonze Swing:</b> Medium point-blank AoE.',
     startFloor: 93,
     endFloor: 98,
     mainlyDangerousWhenSolo: false
@@ -498,7 +514,7 @@ export const enemies = [
   {
     name: '<u>Servomechanical Orthochimera (Patrol)</u>',
     image: '/enemies/mechanicalchimera.jpg',
-    notes: '<b>The Ram\'s Voice:</b> Small point-blank AoE.<br><b>The Dragon\'s Voice:</b> Large donut AoE.<br><b>The Dragon\'s Breath:</b> Cone AoE to front and left.<br><b>Engulfing Ice:</b> Cone AoE to front and right.<br><b>The Scorpion\'s Sting:</b> Rear cone AoE.<br>Stay behind. Run out for Ram\'s voice and to the side for Scorpion\'s sting.',
+    notes: '<b>The Ram\'s Voice:</b> Medium point-blank AoE.<br><b>The Dragon\'s Voice:</b> Large donut AoE.<br><b>The Dragon\'s Breath:</b> Huge cone AoE to front and left.<br><b>Engulfing Ice:</b> Huge cone AoE to front and right.<br><b>The Scorpion\'s Sting:</b> Small rear cone AoE.<br>Stay behind. Run out for Ram\'s voice and to the side for Scorpion\'s sting.',
     startFloor: 95,
     endFloor: 98,
     mainlyDangerousWhenSolo: false
@@ -522,7 +538,7 @@ export const enemies = [
   {
     name: 'Orthonaught',
     image: '/enemies/naught.jpg',
-    notes: '<b>Rotoswipe:</b> Medium cone AoE.',
+    notes: '<b>Rotoswipe:</b> Short, wide cone AoE.',
     startFloor: 96,
     endFloor: 98,
     mainlyDangerousWhenSolo: false
@@ -538,7 +554,7 @@ export const enemies = [
   {
     name: 'Durga',
     image: '/enemies/durga.jpg',
-    notes: '<b>Diffusion Ray:</b> Large cone AoE.<br><b>Brainjack:</b> Unavoidable confusion.',
+    notes: '<b>Diffusion Ray:</b> Large cone AoE. Stay close for easier dodging.<br><b>Brainjack:</b> Unavoidable confusion.',
     startFloor: 96,
     endFloor: 98,
     mainlyDangerousWhenSolo: false

@@ -1,5 +1,5 @@
 import { createTheme, ThemeProvider } from '@mui/material/styles' 
-import { enemies } from './data.js';
+import { enemies } from './EnemyData.js';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
