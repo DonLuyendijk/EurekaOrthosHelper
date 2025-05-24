@@ -1,5 +1,6 @@
 import { createTheme, ThemeProvider } from '@mui/material/styles' 
 import { enemies } from './EnemyData.js';
+import { bosses } from './BossData.js';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
@@ -24,7 +25,8 @@ function filterRelevantEnemies(enemies, floor, soloMode) {
 }
 
 function isBossFloor(floor) {
-  return floor % 10 == 0;
+  return (floor % 10 == 0 && floor < 100)
+    || floor == 99;
 }
 
 function validateFloor(floor) {
@@ -103,7 +105,7 @@ function EnemyInfoPage({ floor, soloMode }) {
   }
   
   if (isBossFloor(floor)) {
-    return <InvalidValuePage />;
+    return <Typography dangerouslySetInnerHTML={{ __html: bosses[floor] }} />
   }
   
   const relevantEnemies = filterRelevantEnemies(enemies, floor, soloMode);
