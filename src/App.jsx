@@ -39,6 +39,10 @@ function tryTransform(transformFn, value) {
   return validateFloor(result) ? result : value;
 }
 
+function isFinalFloor(floor) {
+  return floor == 100;
+}
+
 function EnemyCard({ enemy }) {
   return (
     <Card sx={{ display: 'flex', height: 200, width: 700, border: `1px solid ${theme.palette.custom.border}`}}>
@@ -106,6 +110,14 @@ function EnemyInfoPage({ floor, soloMode }) {
   
   if (isBossFloor(floor)) {
     return <Typography dangerouslySetInnerHTML={{ __html: bosses[floor] }} />
+  }
+
+  if (isFinalFloor(floor)) {
+    return (
+      <Typography variant='h6' align={'center'} fontSize={28}>
+        Congratulations!
+      </Typography>
+    )
   }
   
   const relevantEnemies = filterRelevantEnemies(enemies, floor, soloMode);
