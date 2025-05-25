@@ -1,4 +1,4 @@
-export const enemies = [
+export const Enemies = [
   {
     name: 'Grenade',
     image: '/enemies/grenade.jpg',
