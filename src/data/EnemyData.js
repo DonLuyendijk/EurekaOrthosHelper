@@ -35,8 +35,8 @@ export const Enemies = [
     name: 'Orthoknight',
     image: '/enemies/knight.jpg',
     notes: '<b>Electromagnetism:</b> Draw-in. Quickly followed by a small point-blank AoE. Get away after being sucked in.',
-    startFloor: 21,
-    endFloor: 22,
+    startFloor: 23,
+    endFloor: 25,
     mainlyDangerousWhenSolo: false
   },
   {
