@@ -74,7 +74,7 @@ export const Enemies = [
   {
     name: 'Orthotaur',
     image: '/enemies/taur.jpg',
-    notes: '<b>111-tonze Swing:</b> Small point-blank AoE.<br><b>11-tonze Swipe:</b> Medium cone AoE.',
+    notes: '<b>111-tonze Swing:</b> Medium point-blank AoE.<br><b>11-tonze Swipe:</b> Medium cone AoE.',
     startFloor: 35,
     endFloor: 38,
     mainlyDangerousWhenSolo: false
