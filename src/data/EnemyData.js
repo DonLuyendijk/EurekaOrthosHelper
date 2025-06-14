@@ -98,7 +98,7 @@ export const Enemies = [
   {
     name: 'Orthoempuse',
     image: '/enemies/empuse.jpg',
-    notes: '<b>Kneeling Snath:</b> Knockback. Don\'t get knocked into more enemies or traps .',
+    notes: '<b>Kneeling Snath:</b> Knockback. Don\'t get knocked into more enemies or traps.',
     startFloor: 37,
     endFloor: 39,
     mainlyDangerousWhenSolo: false
